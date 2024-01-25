@@ -3,9 +3,55 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>My test page</title>
+    <title>Timothy Clay</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
   </head>
   <body>
-    <img src="images/red-sox-logo.png" alt="My test image" />
+    <h1>
+        Timothy Clay
+    </h1>
+    <div class="grid-container">
+        <div class="grid-header" style="grid-column-start:1; grid-row-start:1; grid-column-end:3;">
+            Bio
+        </div>
+        <div class="grid-text" style="grid-column-start:1; grid-row-start:2; grid-column-end:3;">
+            My name is Timothy Clay and I am a 2nd year student at Northeastern, majoring in Data Science. Besides DS4200, this 
+            semester I am also taking Programming in C++ (CS3520), Advanced Writing in the Technical Professions (ENGW3302), and 
+            Foundations of Data Science (DS3000). Outside of the classroom, I'm involved with all sorts of different clubs. I'm 
+            currently the president of the Downbeats (logo to the right) -- one of the a cappella groups on campus -- and the vice president of the 
+            newly formed Sports Analytics Club. When I have free time, I also help out with the varsity baseball team as a student 
+            manager. I'm a huge baseball fan and one day want to apply my data science knowledge in the context of an MLB front 
+            office. Having grown up about 45-minutes north of Boston, I'm a die hard Red Sox fan (logo below) and (to a lesser extent) a fan of 
+            all Boston sports. I'm looking forward to the rest of the semester and learning all things Information Presentation and
+            Visualization!
+        </div>
+        <div class="grid-image" style="grid-column-start:3; grid-row-start:2; grid-column-end:4;">
+            <img src="images/downbeats.png"/>
+        </div>
+        <div class="grid-image" style="grid-column-start:1; grid-row-start:4; grid-column-end:2;">
+            <img src="images/red-sox.png"/>
+        </div>
+        <div class="grid-header" style="grid-column-start:2; grid-row-start:3; grid-column-end:4;">
+            Future Features
+        </div>
+        <div class="grid-text" style="grid-column-start:2; grid-row-start:4; grid-column-end:4;">
+            <ul>
+                <li>Multiple pages, so I can showcase different academic or personal projects</li>
+                <li>Added detail for an "about me" page</li>
+                <li>Personal branding and/or a more intentional font/color scheme</li>
+                <li>More JavaScript functionality to make the site more interactive and interesting</li>
+            </ul>
+        </div>
+    </div>
+    <label for="colorInput">Enter a new alternate color:</label>
+    <input type="text" id="colorInput" placeholder="e.g., red">
+    <button onclick="changeColor()">Change Color</button>
+    <div id="loggedInMessage">
+        <!-- Display "logged in as [name]" message -->
+        Logged in as: <span id="userNameDisplay"></span>
+        <button id="reloginButton" onclick="relogin()">Change User</button>
+    </div>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
